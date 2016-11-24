@@ -55,7 +55,9 @@ public class TestGraphReader extends LogParser<List<Graph>> {
             String[] split = methodCall.split(KeyWord.simpleSeparator);
             int deep = Integer.parseInt(split[1]);
             String name = ids.get(split[2]);
-
+            if(name == null) {
+                name = split[2];
+            }
             while(stack.size() >= deep) {
                 stack.pop();
             }
