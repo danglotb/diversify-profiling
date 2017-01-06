@@ -174,7 +174,7 @@ public class SosieSubSetExp {
         InputConfiguration inputConfiguration = new InputConfiguration(args[0]);
         SosieSubSetExp ssse = new SosieSubSetExp(inputConfiguration);
 
-        File resultDir = new File(inputConfiguration.getResultPath());
+        File resultDir = new File(inputConfiguration.getOutputDirectory());
         if(!resultDir.exists()) {
             resultDir.mkdirs();
         }

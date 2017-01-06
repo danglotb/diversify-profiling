@@ -44,7 +44,7 @@ public class StmtInfo {
         main.loadLog();
         main.loadTransformation(inputConfiguration.getPreviousTransformationPath());
 
-        File resultDir = new File(inputConfiguration.getResultPath());
+        File resultDir = new File(inputConfiguration.getOutputDirectory());
         if(!resultDir.exists()) {
             resultDir.mkdirs();
         }
